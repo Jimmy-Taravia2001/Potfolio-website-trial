@@ -1,0 +1,220 @@
+.zone {
+            /*padding:30px 50px; */
+            /*margin:40px 60px;  */
+    cursor:pointer;
+    /*display:inline-block;*/
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+    
+}
+
+.zone:hover {
+    
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+
+
+/**************************************** TYPING WORK OF STYLING STARTS HERE **********************************/
+/*************************** HEADER CODING**************************/
+body{
+    margin: auto 0;
+}
+
+/* TO MAKE Heading NAVIGATION BAR STICK to top */
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;    /* as we used position fixed it will shrinnk the nav bar so width 100% */
+    
+    box-shadow: rgba(0,0,0,0.8) 0px 5px 15px, inset(0,0,0,0.15) 0px -10px 20px;
+    transform: rotateX(360deg);
+    transition-delay: 0.5s;
+}
+
+
+/*.main-nav:hover{
+    box-shadow: rgba(0,0,0,0.8) 0px 5px 15px, inset(0,0,0,0.15) 0px -10px 20px;
+    transform: rotateX(360deg);
+    transition-delay: 0.2s;
+}
+*/
+
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    font-size: 32px;
+    margin: 0; 
+    
+   
+}
+li{
+    padding: 15px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.push{
+    margin-left: auto;
+}
+
+.cobarty:hover{
+    color: #ffffffbf;
+    
+}
+
+
+
+
+/*************************** SOMETHING NEW i.e. MEDIA QUERY to Make RESPONSIVE Page: *************************/
+@media only screen and (max-width: 650px) {
+    .main-nav{
+        padding: 1px;
+        font-size: 17px;
+    }
+   
+}
+/******************************COVER PART CODING_001*************************************/
+.container{
+    display: flex;
+    height: 90vh;
+    justify-content: left; 
+    align-items: center;
+
+    margin-top: 104px;
+  
+}
+
+
+
+.container .cover:hover{
+    box-shadow: rgba(0,0,0,0.8) 0px 5px 15px, inset(0,0,0,0.15) 0px -10px 20px;
+    transform: rotateX(360deg);
+    transition-delay: 0.2s;
+}
+
+
+/***** COVER PART CODING_002******/
+.cover{
+    width: 55vh;
+    height: 69vh;      /*WE CAN USE:  margin-top: 70px; */
+    margin-top: 50px;
+    margin-left: 30vh;
+    border-radius: 50px;
+
+}
+
+span{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+
+/****** COVER PART CODING_003*****/
+
+
+
+/************************************* PROJECT WORK STARTS HERE *******************************/
+/*PROJECT WORK*/
+.grid-wrapper{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.box > img{
+    width: 100%;
+}
+.box{
+    background-color: rgb(41, 38, 38);
+    padding: 120px;
+    margin: 10px;
+    /* we can use anmation here too like :  animation: forward;*/
+    animation: forward;
+}
+
+.box:hover{
+    transform: rotateX(40deg);
+    transition-delay: 20ms;
+   /* also useful :      transform: rotateZ(360deg);  transition-delay: 0.4s;*/
+}
+
+
+
+
+
+
+
+
+/********************************************** TYPING WORK ENDS HERE*************************************/
+
+
+
+
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+
+/*********************************************
+ *  Green Background
+ *********************************************/
+.green{
+    background: black; /* Old browsers  #56B870*/
+    /******* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); (Chrome,Safari4+) *******/
+    
+    /* background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%);  (FF3.6+) */
+    /* background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%);  (Chrome10+,Safari5.1+)  */ 
+    /* background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%);  (Opera 11.10+) */
+    /* background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%);  (IE10+) */
+    /* background: linear-gradient(top, #56B870 0%,#a5c956 100%);  (W3C) */
+}
+
+/****************************************
+ *  Red Background
+ ****************************************/
+.red{
+    background: rgb(17, 16, 16); /* Old browsers */
+    /***** background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404));  (Chrome,Safari4+)  ****/
+
+    /* background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404));  (Chrome,Safari4+) */
+    /* background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%);  (Chrome10+,Safari5.1+) */
+    /* background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%);  (Opera 11.10+) */
+    /* background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%);  (IE10+) */
+    /* background: linear-gradient(top, #C655BE 0%,#cf0404 100%);  (W3C) */
+    
+}
+
+/************************************************
+ *  Yellow Background
+ ***********************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+
+    /* background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    /* background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%);  (Chrome10+,Safari5.1+) */
+    /* background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%);  (Opera 11.10+) */
+    /* background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); (IE10+) */
+    /* background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); (W3C) */
+}
+
+/**********************************************
+ *  Blue Background
+ **********************************************/
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+
+    /* background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); (FF3.6+) */
+    /* background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);  (Chrome10+,Safari5.1+) */
+    /* background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);  (Opera 11.10+) */
+    /* background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);  (IE10+) */
+    /* background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);  (W3C) */
+}
